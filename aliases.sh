@@ -19,5 +19,6 @@ alias gd='git diff'
 alias grb='git rebase'
 
 #ls
+alias l='ls -G'
 alias ls='ls -G'
 alias ll='ls -lG'
