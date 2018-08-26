@@ -13,7 +13,7 @@ function parse_git_branch() {
         test ${REMOTE_BRANCH} && REMOTE_STR=${REMOTE}/${REMOTE_BRANCH}
 
 		STAT=`parse_git_dirty`
-		echo "[${BRANCH}->${REMOTE_STR}|${STAT}]"
+		echo "\[\e[32m\][${BRANCH}->\[\e[m\]\[\e[31m\]${REMOTE_STR}|\[\e[m\]\[\e[32m\]${STAT}]\[\e[m\]"
 	else
 		echo ""
 	fi
@@ -54,4 +54,5 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[31m\]\`nonzero_return\`\[\e[m\]\[\e[35m\][\t]\[\e[m\]\[\e[35m\]\u:\[\e[m\]\[\e[34m\]\W\[\e[m\]\[\e[32m\]\`parse_git_branch\`\[\e[m\] \n$ "
+echo `parse_git_branch`
+export PS1="\[\e[31m\]\`nonzero_return\`\[\e[m\]\[\e[35m\][\t]\[\e[m\]\[\e[35m\]\u:\[\e[m\]\[\e[34m\]\W\[\e[m\]"`parse_git_branch`" \n$ "
