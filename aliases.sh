@@ -11,15 +11,18 @@ alias grv='git remote -v'
 alias gl='git log'
 alias gf='git fetch --all'
 alias gm='git commit'
-alias gn='git clean'
+alias gn='git clean -i'
 alias gb='git branch -vvv'
 alias gbu='git branch --set-upstream-to'
 alias gc='git checkout'
-alias gset='git reset --hard'
+alias gset='git reset'
+alias gset_h='git reset --hard'
 alias gt='git stash'
 alias gtp='git stash pop'
 alias gd='git diff'
 alias grb='git rebase'
+alias grb_c='git rebase --continue'
+alias grb_a='git rebase --abort'
 alias gmt='git mergetool'
 alias gmg='git merge'
 
@@ -27,3 +30,11 @@ alias gmg='git merge'
 alias l='ls -G'
 alias ls='ls -G'
 alias ll='ls -lG'
+
+
+#find
+alias fc='find . -name '
+
+#python
+alias py='python'
+alias ipy='ipython'

@@ -12,7 +12,7 @@ function parse_git_branch() {
         test ${REMOTE} && REMOTE_BRANCH=`git config --get-regexp "branch\.${BRANCH}\.merge" | sed -e "s/^.* //" -e "s/refs\/.*\///"`
         test ${REMOTE_BRANCH} && REMOTE_STR=${REMOTE}/${REMOTE_BRANCH}
 		STAT=`parse_git_dirty`
-		echo -e "\\033[32m[${BRANCH}->\\033[0m\\033[31m${REMOTE_STR}|\\033[0m\\033[32m${STAT}]\\033[0m"
+		echo -e "\\033[32m ${BRANCH} -> \\033[0m\\033[31m${REMOTE_STR}|\\033[0m\\033[32m${STAT} \\033[0m"
 	else
 		echo ""
 	fi
@@ -54,4 +54,4 @@ function parse_git_dirty {
     fi
 }
 
-export PS1="\[\e[31m\]\`nonzero_return\`\[\e[m\]\[\e[35m\][\t]\[\e[m\]\[\e[35m\]\u:\[\e[m\]\[\e[34m\]\W\[\e[m\]\`parse_git_branch\` \n$ "
+export PS1="\[\e[31m\]\`nonzero_return\` \[\e[m\]\[\e[35m\]\t \[\e[m\]\[\e[35m\]\u \[\e[m\]\[\e[34m\]\W\[\e[m\]\`parse_git_branch\` \n$ "
