@@ -29,7 +29,7 @@ alias gmg='git merge'
 #ls
 alias l='ls -G'
 alias ls='ls -G'
-alias ll='ls -lG'
+alias ll='ls -lGh'
 
 
 #find
@@ -38,3 +38,6 @@ alias fc='find . -name '
 #python
 alias py='python'
 alias ipy='ipython'
+alias pev='pyenv'
+
+alias e='exit'
