@@ -2,10 +2,13 @@ export PATH=$PATH:/Users/vinvancan/Library/Python/2.7/bin
 
 export PD="/Users/vinvancan/Projects/qf/questrade"
 export PDD="/Users/vinvancan/Documents/Project Docs/crypto-trading"
+export TMP="/Users/vinvancan/Projects/tmp"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source /Users/vinvancan/.bash/.git-completion.bash
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
@@ -20,3 +23,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
+
+neofetch --ascii /Users/vinvancan/.personal/askii_art/star.txt
+shopt -s autocd
