@@ -41,3 +41,4 @@ alias ipy='ipython'
 alias pev='pyenv'
 
 alias e='exit'
+alias clr='clear'
