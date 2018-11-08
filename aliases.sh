@@ -6,6 +6,7 @@ alias ga='git add'
 alias gp='git pull'
 alias gpr='git pull --rebase'
 alias gpu='git push'
+alias gpd='git push origin --delete'
 alias gr='git remote'
 alias grv='git remote -v'
 alias gl="git log --graph --all --oneline --decorate"
