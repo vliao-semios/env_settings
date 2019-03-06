@@ -35,6 +35,8 @@ alias ll='ls -lGh'
 
 #find
 alias fc='find . -name '
+alias g='grep'
+alias g_d='g -rnw'
 
 #python
 alias py='python'
@@ -43,3 +45,17 @@ alias pev='pyenv'
 
 alias e='exit'
 alias clr='clear'
+
+#kubernetes
+alias k='kubectl'
+alias mk='minikube'
+
+alias kcf='k create -f'
+alias kdf='k delete -f'
+alias kaf='k apply -f'
+alias kga='k get all'
+alias kds='k describe'
+
+#docker
+alias dk='docker'
+alias dki='dk image'

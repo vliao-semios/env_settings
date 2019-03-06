@@ -8,9 +8,9 @@ ${c1}             .c;.   .'''...           ${c6}..'.
 ${c2}.,:cloddxxxkk${c3}kkOOOOkkkkkkkk${c6}xxxxxxxxxkkkx:
 ${c2};kOOOOOOOkxO${c3}kc'...',;;;;,,,'${c6}',;;:cllc:,.
 ${c2} .okkkkd,.l${c3}ko  .......',;:cll${c6}c:;,,'''''.
-${c2}   .cdo. :${c3}xd' cd:.  ..';'',,,'${c6}',,;;;,'.
-${c2}      . .${c3}ddl.;doooc'..;oc;'..';${c6}::;,'.
-${c2}        c${c3}oo;.oooolllllllcccc:'. ${c6} .
+${c2}   .cdo. :x${c3}d' cd:.  ..';'',,,${c6}'',,;;;,'.
+${c2}      . .d${c3}dl.;doooc'..;oc;'..'${c6};::;,'.
+${c2}        co${c3}o;.oooolllllllcccc:'${c6}.  .
 ${c6}       .ool${c3}''lllllccccccc:::${c5}::;.
 ${c6}       ;lll. .'${c3}:cccc:::::${c5}::;;;;'
 ${c6}       :lcc:'',..${c3}';::::${c5};;;;;;;,,.
