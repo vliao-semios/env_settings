@@ -9,7 +9,7 @@ alias gpu='git push'
 alias gpd='git push origin --delete'
 alias gr='git remote'
 alias grv='git remote -v'
-alias gl="git log --graph --all --oneline --decorate"
+alias gl='git log --graph --all --pretty=format:"%Cgreen%h %Cblue@ %aI %C(yellow) by [%an] %Cred%d %Creset| %s" --decorate=auto'
 alias gf='git fetch --all'
 alias gm='git commit -m'
 alias gn='git clean -i'
@@ -43,8 +43,10 @@ alias py='python'
 alias ipy='ipython'
 alias pev='pyenv'
 
+alias jn='jupyter notebook'
+
 alias e='exit'
-alias clr='clear'
+alias c='clear'
 
 #kubernetes
 alias k='kubectl'
@@ -58,4 +60,12 @@ alias kds='k describe'
 
 #docker
 alias dk='docker'
+alias dkc='docker container'
+alias dkr='docker run'
 alias dki='dk image'
+
+#pipenv
+alias pe='pipenv'
+
+#tmux
+alias txa='tmux a -t'
