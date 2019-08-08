@@ -69,3 +69,17 @@ alias pe='pipenv'
 
 #tmux
 alias txa='tmux a -t'
+
+#terraform
+alias tf='terraform'
+alias tfp='terraform plan'
+alias tfa='terraform apply'
+alias tfs='terraform show'
+alias tfd='terraform destroy'
+alias tfi='terraform init'
+alias tfg='terraform graph'
+alias tff='terraform fmt'
+alias tfim='terraform import'
+alias tfpd='terraform providers'
+alias tfe='terraform env'
+alias tfo='terraform output'
