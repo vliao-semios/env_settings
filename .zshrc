@@ -69,6 +69,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+aws
 git
 vi-mode
 colored-man-pages
@@ -117,4 +118,8 @@ export HISTFILE=~/.zhistory
 
 source $HOME/.env_settings/aliases.sh
 
-neofetch --ascii $HOME/.personal/askii_art/star.txt
+[ -x "$(command -v neofetch )" ] && neofetch --ascii $HOME/.env_settings/askii_art/star.txt
+
+[ -s $HOME/.env_settings/.zshrc.local ] && source $HOME/.env_settings/.zshrc.local
+
+
