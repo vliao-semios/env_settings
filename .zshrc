@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -118,8 +118,9 @@ export HISTFILE=~/.zhistory
 
 source $HOME/.env_settings/aliases.sh
 
+export PATH=$PATH:$HOME/.env_settings/bin
+
 [ -x "$(command -v neofetch )" ] && neofetch --ascii $HOME/.env_settings/askii_art/star.txt
 
 [ -s $HOME/.env_settings/.zshrc.local ] && source $HOME/.env_settings/.zshrc.local
-
 
