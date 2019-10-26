@@ -3,7 +3,7 @@
 function pushorigin(){
     current_branch=$(git branch | grep "*" | cut -d " " -f 2)
     print "current branch ${current_branch}"
-    tracking=$(git for-each-ref --format="%(refname)|%(push)" | grep try_a_func | cut -d "|" -f 2)
+    tracking=$(git for-each-ref --format="%(refname)|%(push)" | grep "refs/heads/${current_branch}" | cut -d "|" -f 2)
     print current tracking $tracking
     if [[ -z "${tracking}" ]]
     then
